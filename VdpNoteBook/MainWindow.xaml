@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VdpNoteBook"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Carnet de notes" Height="350" Width="600">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="img/notebook.jpg" Grid.Row="1" Grid.Column="1"/>
+
+        <Button Content="Saisir les matières" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="2"/>
+        <Button Content="Rentrer un examen" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="2"/>
+        <Button Content="Affichers les moyennes" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="2"/>
     </Grid>
 </Window>
